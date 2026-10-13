@@ -1,0 +1,214 @@
+{
+  "menus": [
+    {
+      "name": "Menú 1",
+      "price": "60 €",
+      "pp": "por persona",
+      "tag": "",
+      "groups": [
+        {
+          "label": "A compartir · cada 3",
+          "items": [
+            "Ensalada de tomate de temporada",
+            "Gambas con salsa garum",
+            "Calamares a la andaluza",
+            "Croqueta de pato",
+            "Almejas donostiarra",
+            "Canelón de rustido trufado",
+            "Spaghettini a la vongole"
+          ]
+        },
+        {
+          "label": "A escoger",
+          "items": [
+            "Corvina a la donostierra",
+            "Entraña black angus",
+            "Verduras asadas con romesco"
+          ]
+        },
+        {
+          "label": "Postre",
+          "items": [
+            "Crema catalana",
+            "Piña asada con helado de coco"
+          ]
+        },
+        {
+          "label": "Bodega",
+          "items": [
+            "Agua mineral",
+            "Vino blanco Lalos Verdejo D.O. Rueda",
+            "Vino tinto Paciente Autor D.O.C. Rioja",
+            "1 botella cada tres personas"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Menú 2",
+      "price": "90 €",
+      "pp": "por persona",
+      "tag": "",
+      "groups": [
+        {
+          "label": "A compartir · cada 3",
+          "items": [
+            "Tartar de atún",
+            "Croqueta de pato",
+            "Almejas donostiarra",
+            "Ostra",
+            "Jamón"
+          ]
+        },
+        {
+          "label": "A escoger",
+          "items": [
+            "Arroz de marisco",
+            "Spaghettini a la vongole",
+            "Rabo de buey",
+            "Pescado del día para 2",
+            "Trufas"
+          ]
+        },
+        {
+          "label": "Postre",
+          "items": [
+            "Crema catalana",
+            "Coulant",
+            "Cheesecake"
+          ]
+        },
+        {
+          "label": "Bodega",
+          "items": [
+            "Agua mineral",
+            "Vino blanco Pazo do Castrelo Albariño",
+            "Vino tinto Arrocal Ribera del Duero",
+            "1 botella cada dos personas"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Menú 3",
+      "price": "120 €",
+      "pp": "por persona",
+      "tag": "Copa de cava incluida",
+      "groups": [
+        {
+          "label": "A compartir · cada 3",
+          "items": [
+            "Croqueta de pato",
+            "Steak tartar para compartir",
+            "Ensaladilla rusa para compartir",
+            "Ostra",
+            "Almejas donostiarra",
+            "Jamón ibérico",
+            "Pan con tomate"
+          ]
+        },
+        {
+          "label": "A escoger",
+          "items": [
+            "Rodaballo a la brasa a la donostiarra",
+            "Rigatoni trufados",
+            "Costilla de cabrito"
+          ]
+        },
+        {
+          "label": "Postre",
+          "items": [
+            "Surtido de postres"
+          ]
+        },
+        {
+          "label": "Bodega",
+          "items": [
+            "Agua mineral",
+            "Vino blanco Pazo do Castrelo Albariño",
+            "Vino tinto Arrocal Ribera del Duero",
+            "1 botella cada dos personas",
+            "Copa de cava"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Menú Cocktail",
+      "price": "60 €",
+      "pp": "por persona",
+      "tag": "En formato aperitivo, de pie",
+      "groups": [
+        {
+          "label": "A compartir",
+          "items": [
+            "Ensaladilla rusa",
+            "Tostadita de foie",
+            "Mollete de calamares",
+            "Croquetas de pollo rustido",
+            "Almeja gallega santurcia",
+            "Selección de quesos",
+            "Anchoa con mantequilla",
+            "Rodaja de pulpo a la brasa",
+            "Bikini trufado de jamón ibérico",
+            "Bao de pato"
+          ]
+        },
+        {
+          "label": "Postre",
+          "items": [
+            "Tarta de queso"
+          ]
+        },
+        {
+          "label": "Bodega",
+          "items": [
+            "Agua mineral",
+            "Vino blanco Lalos Verdejo D.O. Rueda",
+            "Vino tinto Paciente Autor D.O.C. Rioja",
+            "1 botella cada tres personas"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Menú Cocktail Premium",
+      "price": "90 €",
+      "pp": "por persona",
+      "tag": "En formato aperitivo, de pie",
+      "groups": [
+        {
+          "label": "A compartir",
+          "items": [
+            "Tartar de atún sobre tartaleta",
+            "Tostadita de foie",
+            "Calamares a la andaluza",
+            "Croquetas de pollo rustido",
+            "Mini pepito de ternera",
+            "Ostra amelie",
+            "Jamón ibérico de bellota",
+            "Rape en tempura",
+            "Bikini trufado de jamón ibérico",
+            "Bao de pato",
+            "Muerdo de steak"
+          ]
+        },
+        {
+          "label": "Postre",
+          "items": [
+            "Surtido de dulces"
+          ]
+        },
+        {
+          "label": "Bodega",
+          "items": [
+            "Agua mineral",
+            "Vino blanco Pazo do Castrelo Albariño",
+            "Vino tinto Arrocal Ribera del Duero",
+            "1 botella cada dos personas"
+          ]
+        }
+      ]
+    }
+  ]
+}

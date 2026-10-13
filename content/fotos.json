@@ -1,0 +1,62 @@
+{
+  "hero": [
+    {
+      "imagen": "images/facade-columns.jpg",
+      "alt": "Fachada de Mery con sus columnas en Francesc Macià"
+    },
+    {
+      "imagen": "images/pulpo.jpg",
+      "alt": "Pulpo a la brasa de Mery"
+    },
+    {
+      "imagen": "images/aperitivo.jpg",
+      "alt": "Varios platos en la mesa de Mery"
+    },
+    {
+      "imagen": "images/terrace.jpg",
+      "alt": "Terraza de Mery con la plaza de fondo"
+    },
+    {
+      "imagen": "images/interior-champagne.jpg",
+      "alt": "Interior de Mery con la pared de champagne y la lámpara de araña"
+    }
+  ],
+  "instagram": [
+    {
+      "imagen": "images/pulpo.jpg",
+      "alt": "Pescado y brasa de Mery"
+    },
+    {
+      "imagen": "images/interior-champagne.jpg",
+      "alt": "Interior de Mery con la lámpara de araña"
+    },
+    {
+      "imagen": "images/hero-bar.jpg",
+      "alt": "Cóctel en la barra de Mery"
+    },
+    {
+      "imagen": "images/terrace.jpg",
+      "alt": "Terraza de Mery en la plaza"
+    },
+    {
+      "imagen": "images/champagne-brut.jpg",
+      "alt": "Champagne Perrier-Jouët"
+    },
+    {
+      "imagen": "images/facade-columns.jpg",
+      "alt": "Fachada de Mery con sus columnas"
+    },
+    {
+      "imagen": "images/aperitivo.jpg",
+      "alt": "Aperitivo en Mery"
+    },
+    {
+      "imagen": "images/place-setting.jpg",
+      "alt": "Mesa preparada en Mery"
+    },
+    {
+      "imagen": "images/facade.jpg",
+      "alt": "Fachada del edificio de Mery"
+    }
+  ]
+}

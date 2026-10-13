@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Menús para grupos · Restaurante Mery · Barcelona</title>
+<meta name="description" content="Menús cerrados para grupos en Mery: comidas de empresa, celebraciones y eventos en Plaça de Francesc Macià, Barcelona." />
+<link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin />
+<link rel="preconnect" href="https://db.onlinewebfonts.com" crossorigin />
+<link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="grupos-page">
+
+<!-- ============ HEADER ============ -->
+<header class="site-header scrolled" id="header">
+  <div class="bar">
+    <ul class="nav-links">
+      <li><a href="index.html#carta">Carta</a></li>
+      <li><a href="eventos.html">Eventos</a></li>
+      <li><a href="grupos.html" class="is-current">Grupos</a></li>
+    </ul>
+    <a href="index.html#inicio" class="brand"><img src="images/mery-logo.png" alt="Mery · Barcelona" /></a>
+    <ul class="nav-links right">
+      <li><a href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener" class="nav-ig" aria-label="Instagram de Mery">
+        <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+      </a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+      <li><a href="index.html#reserva" class="nav-cta">Reservar</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="grupos-hero">
+  <div class="wrap">
+    <p class="kicker center">Menús para grupos</p>
+    <h1>Celebra en <em>Mery</em></h1>
+    <p class="grupos-hero__sub">El restaurante Mery abrió sus puertas en 1935 y se convirtió en punto de encuentro de la Barcelona de la época. Más de sesenta años después recupera su identidad y su espíritu acogedor: misma esencia, nueva cocina. Una propuesta que celebra el producto, la sobremesa y el placer de compartir.</p>
+    <div class="grupos-hero__actions">
+      <a href="menu/menu-grupos-mery.pdf" target="_blank" rel="noopener" class="btn btn--outline">Descargar en PDF</a>
+      <a href="index.html#reserva" class="btn">Reservar mesa</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MENÚS ============ -->
+<section class="grupos-menus section-pad">
+  <div class="wrap grupos-list" id="gruposList"></div>
+</section>
+
+<!-- ============ CIERRE ============ -->
+<section class="grupos-foot">
+  <div class="wrap">
+    <p class="kicker center">Hablemos de tu evento</p>
+    <h2>Diseñamos la propuesta a tu medida</h2>
+    <p class="grupos-foot__txt">Grupos de 8 a 60 personas. Cuéntanos la ocasión y preparamos menú, bebidas y espacio para que solo tengas que disfrutar.</p>
+    <div class="grupos-hero__actions">
+      <a href="mailto:hola@meryrestaurante.com?subject=Evento%20de%20grupo%20en%20Mery" class="btn btn--outline">Escríbenos</a>
+      <a href="index.html#reserva" class="btn">Reservar mesa</a>
+    </div>
+    <p class="grupos-foot__legal">Precios por persona (IVA incluido). Menús sujetos a disponibilidad y temporada. Consúltanos alérgenos e intolerancias.</p>
+  </div>
+</section>
+
+<footer class="grupos-footer">
+  <a href="index.html#inicio">← Volver a la web de Mery</a>
+</footer>
+
+
+<script>
+const MENUS = [
+  {
+    name: "Menú 1", price: "60 €", pp: "por persona",
+    groups: [
+      { label: "A compartir · cada 3", items: ["Ensalada de tomate de temporada","Gambas con salsa garum","Calamares a la andaluza","Croqueta de pato","Almejas donostiarra","Canelón de rustido trufado","Spaghettini a la vongole"] },
+      { label: "A escoger", items: ["Corvina a la donostierra","Entraña black angus","Verduras asadas con romesco"] },
+      { label: "Postre", items: ["Crema catalana","Piña asada con helado de coco"] },
+      { label: "Bodega", items: ["Agua mineral","Vino blanco Lalos Verdejo D.O. Rueda","Vino tinto Paciente Autor D.O.C. Rioja","1 botella cada tres personas"] }
+    ]
+  },
+  {
+    name: "Menú 2", price: "90 €", pp: "por persona",
+    groups: [
+      { label: "A compartir · cada 3", items: ["Tartar de atún","Croqueta de pato","Almejas donostiarra","Ostra","Jamón"] },
+      { label: "A escoger", items: ["Arroz de marisco","Spaghettini a la vongole","Rabo de buey","Pescado del día para 2","Trufas"] },
+      { label: "Postre", items: ["Crema catalana","Coulant","Cheesecake"] },
+      { label: "Bodega", items: ["Agua mineral","Vino blanco Pazo do Castrelo Albariño","Vino tinto Arrocal Ribera del Duero","1 botella cada dos personas"] }
+    ]
+  },
+  {
+    name: "Menú 3", price: "120 €", pp: "por persona", tag: "Copa de cava incluida",
+    groups: [
+      { label: "A compartir · cada 3", items: ["Croqueta de pato","Steak tartar para compartir","Ensaladilla rusa para compartir","Ostra","Almejas donostiarra","Jamón ibérico","Pan con tomate"] },
+      { label: "A escoger", items: ["Rodaballo a la brasa a la donostiarra","Rigatoni trufados","Costilla de cabrito"] },
+      { label: "Postre", items: ["Surtido de postres"] },
+      { label: "Bodega", items: ["Agua mineral","Vino blanco Pazo do Castrelo Albariño","Vino tinto Arrocal Ribera del Duero","1 botella cada dos personas","Copa de cava"] }
+    ]
+  },
+  {
+    name: "Menú Cocktail", price: "60 €", pp: "por persona", tag: "En formato aperitivo, de pie",
+    groups: [
+      { label: "A compartir", items: ["Ensaladilla rusa","Tostadita de foie","Mollete de calamares","Croquetas de pollo rustido","Almeja gallega santurcia","Selección de quesos","Anchoa con mantequilla","Rodaja de pulpo a la brasa","Bikini trufado de jamón ibérico","Bao de pato"] },
+      { label: "Postre", items: ["Tarta de queso"] },
+      { label: "Bodega", items: ["Agua mineral","Vino blanco Lalos Verdejo D.O. Rueda","Vino tinto Paciente Autor D.O.C. Rioja","1 botella cada tres personas"] }
+    ]
+  },
+  {
+    name: "Menú Cocktail Premium", price: "90 €", pp: "por persona", tag: "En formato aperitivo, de pie",
+    groups: [
+      { label: "A compartir", items: ["Tartar de atún sobre tartaleta","Tostadita de foie","Calamares a la andaluza","Croquetas de pollo rustido","Mini pepito de ternera","Ostra amelie","Jamón ibérico de bellota","Rape en tempura","Bikini trufado de jamón ibérico","Bao de pato","Muerdo de steak"] },
+      { label: "Postre", items: ["Surtido de dulces"] },
+      { label: "Bodega", items: ["Agua mineral","Vino blanco Pazo do Castrelo Albariño","Vino tinto Arrocal Ribera del Duero","1 botella cada dos personas"] }
+    ]
+  }
+];
+
+const list = document.getElementById('gruposList');
+function renderMenus(MENUS){
+list.innerHTML = MENUS.map((m, i) => `
+  <article class="gmenu" style="--i:${i}">
+    <header class="gmenu__head">
+      <div class="gmenu__title">
+        <span class="gmenu__no">${String(i+1).padStart(2,'0')}</span>
+        <h2>${m.name}</h2>
+        ${m.tag ? `<span class="gmenu__tag">${m.tag}</span>` : ''}
+      </div>
+      <div class="gmenu__price"><span class="gmenu__amount">${m.price}</span><span class="gmenu__pp">${m.pp}</span></div>
+    </header>
+    <div class="gmenu__grid">
+      ${m.groups.map(g => `
+        <div class="gcol">
+          <p class="gcol__label">${g.label}</p>
+          <ul class="gcol__list">
+            ${g.items.map(it => `<li>${it}</li>`).join('')}
+          </ul>
+        </div>
+      `).join('')}
+    </div>
+  </article>
+`).join('');
+}
+renderMenus(MENUS);
+fetch('content/grupos.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{if(d&&d.menus)renderMenus(d.menus);}).catch(()=>{});
+</script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+{
+  "nav_carta": {
+    "es": "Carta",
+    "ca": "Carta",
+    "en": "Menu"
+  },
+  "nav_eventos": {
+    "es": "Eventos",
+    "ca": "Esdeveniments",
+    "en": "Events"
+  },
+  "nav_opiniones": {
+    "es": "Opiniones",
+    "ca": "Opinions",
+    "en": "Reviews"
+  },
+  "nav_contacto": {
+    "es": "Contacto",
+    "ca": "Contacte",
+    "en": "Contact"
+  },
+  "nav_reservar": {
+    "es": "Reservar",
+    "ca": "Reservar",
+    "en": "Book"
+  },
+  "nav_reservar_mesa": {
+    "es": "Reservar mesa",
+    "ca": "Reservar taula",
+    "en": "Book a table"
+  },
+  "hero_eyebrow": {
+    "es": "Barcelona · Francesc Macià",
+    "ca": "Barcelona · Francesc Macià",
+    "en": "Barcelona · Francesc Macià"
+  },
+  "hero_sub": {
+    "es": "Cocina mediterránea, brasa y barra de coctelería en Francesc Macià, Barcelona. Abierto todos los días.",
+    "ca": "Cuina mediterrània, brasa i barra de coctelaria a Francesc Macià, Barcelona. Obert tots els dies.",
+    "en": "Mediterranean cooking, charcoal grill and a cocktail bar in Francesc Macià, Barcelona. Open every day."
+  },
+  "hero_cta_carta": {
+    "es": "Ver la carta",
+    "ca": "Veure la carta",
+    "en": "View the menu"
+  },
+  "intro_kicker": {
+    "es": "Desde 1935",
+    "ca": "Des de 1935",
+    "en": "Since 1935"
+  },
+  "intro_title": {
+    "es": "Misma esencia, <em>nueva cocina</em>",
+    "ca": "Mateixa essència, <em>nova cuina</em>",
+    "en": "Same soul, <em>new kitchen</em>"
+  },
+  "intro_p1": {
+    "es": "El restaurante Mery abrió sus puertas por primera vez en 1935, convirtiéndose en un punto de encuentro de la Barcelona de la época durante más de dos décadas.",
+    "ca": "El restaurant Mery va obrir les seves portes per primera vegada l'any 1935, convertint-se en un punt de trobada de la Barcelona de l'època durant més de dues dècades.",
+    "en": "Restaurante Mery first opened its doors in 1935, becoming a meeting point of Barcelona's social life for over two decades."
+  },
+  "intro_p2": {
+    "es": "Más de sesenta años después, el local recupera su identidad original y su espíritu acogedor para abrir un nuevo capítulo, manteniendo vivo el legado que dio inicio a esta historia. Una propuesta gastronómica contemporánea que celebra el producto, la sobremesa y el placer de compartir.",
+    "ca": "Més de seixanta anys després, el local recupera la seva identitat original i el seu esperit acollidor per obrir un nou capítol, mantenint viu el llegat que va donar inici a aquesta història. Una proposta gastronòmica contemporània que celebra el producte, la sobretaula i el plaer de compartir.",
+    "en": "More than sixty years later, the space recovers its original identity and warm spirit to open a new chapter, keeping alive the legacy that started this story. A contemporary take on cooking that celebrates good produce, long lunches and the pleasure of sharing."
+  },
+  "carta_kicker": {
+    "es": "La carta",
+    "ca": "La carta",
+    "en": "The menu"
+  },
+  "carta_title": {
+    "es": "Para disfrutar <em>sin prisa</em>",
+    "ca": "Per gaudir <em>sense pressa</em>",
+    "en": "Take your <em>time</em>"
+  },
+  "carta_lede": {
+    "es": "El mejor producto de temporada, la brasa protagonista y una bodega pensada para acompañar.",
+    "ca": "El millor producte de temporada, la brasa protagonista i un celler pensat per acompanyar.",
+    "en": "The best seasonal produce, the charcoal grill front and centre, and a wine list built to match."
+  },
+  "tab_vermut": {
+    "es": "De vermut y tapeo",
+    "ca": "De vermut i tapeig",
+    "en": "Vermouth & tapas"
+  },
+  "tab_huerta": {
+    "es": "De la huerta",
+    "ca": "De l'hort",
+    "en": "From the garden"
+  },
+  "tab_principales": {
+    "es": "Principales",
+    "ca": "Principals",
+    "en": "Mains"
+  },
+  "tab_asador": {
+    "es": "Carbón y asador",
+    "ca": "Carbó i graella",
+    "en": "Charcoal & grill"
+  },
+  "tab_postres": {
+    "es": "Postres",
+    "ca": "Postres",
+    "en": "Desserts"
+  },
+  "tab_vinos": {
+    "es": "Vinos & Champagne",
+    "ca": "Vins & Champagne",
+    "en": "Wine & Champagne"
+  },
+  "carta_note": {
+    "es": "Disponemos de una lista detallada de alérgenos presentes en cada uno de nuestros platos, que puede ser consultada a su solicitud.",
+    "ca": "Disposem d'una llista detallada d'al·lèrgens presents a cadascun dels nostres plats, que es pot consultar sota petició.",
+    "en": "A detailed allergen list for every dish is available on request."
+  },
+  "coct_kicker": {
+    "es": "Coctelería de autor",
+    "ca": "Coctelaria d'autor",
+    "en": "Signature cocktails"
+  },
+  "coct_title": {
+    "es": "La barra de <em>Mery</em>",
+    "ca": "La barra de <em>Mery</em>",
+    "en": "The bar at <em>Mery</em>"
+  },
+  "coct_lede1": {
+    "es": "La coctelería forma parte de la experiencia Mery. Desde el aperitivo hasta la última copa de la noche, nuestra barra acompaña cada momento con una selección cuidada de cócteles clásicos, creaciones de temporada y referencias premium de <strong>Pernod Ricard</strong>.",
+    "ca": "La coctelaria forma part de l'experiència Mery. Des de l'aperitiu fins a l'última copa de la nit, la nostra barra acompanya cada moment amb una selecció acurada de còctels clàssics, creacions de temporada i referències premium de <strong>Pernod Ricard</strong>.",
+    "en": "Cocktails are part of the Mery experience. From the first aperitivo to the last drink of the night, our bar accompanies every moment with a curated selection of classic cocktails, seasonal creations and premium references from <strong>Pernod Ricard</strong>."
+  },
+  "coct_lede2": {
+    "es": "Una propuesta pensada para disfrutar sin prisa, donde cada copa se sirve con la misma atención al detalle que define nuestra cocina.",
+    "ca": "Una proposta pensada per gaudir sense pressa, on cada copa es serveix amb la mateixa atenció al detall que defineix la nostra cuina.",
+    "en": "A proposal built for lingering, where every drink is served with the same attention to detail that defines our kitchen."
+  },
+  "coct_collab": {
+    "es": "En colaboración con",
+    "ca": "En col·laboració amb",
+    "en": "In collaboration with"
+  },
+  "opiniones_kicker": {
+    "es": "Opiniones",
+    "ca": "Opinions",
+    "en": "Reviews"
+  },
+  "opiniones_label": {
+    "es": "Valoración media · 840 reseñas en Google",
+    "ca": "Valoració mitjana · 840 ressenyes a Google",
+    "en": "Average rating · 840 reviews on Google"
+  },
+  "opiniones_cta": {
+    "es": "Leer las reseñas en Google",
+    "ca": "Llegir les ressenyes a Google",
+    "en": "Read reviews on Google"
+  },
+  "insta_kicker": {
+    "es": "Síguenos",
+    "ca": "Segueix-nos",
+    "en": "Follow us"
+  },
+  "insta_cta": {
+    "es": "Ver en Instagram",
+    "ca": "Veure a Instagram",
+    "en": "View on Instagram"
+  },
+  "reserva_kicker": {
+    "es": "Reservas",
+    "ca": "Reserves",
+    "en": "Reservations"
+  },
+  "reserva_title": {
+    "es": "Su mesa le espera en <em style=\"color:var(--gold-soft)\">Mery</em>",
+    "ca": "La teva taula t'espera a <em style=\"color:var(--gold-soft)\">Mery</em>",
+    "en": "Your table awaits at <em style=\"color:var(--gold-soft)\">Mery</em>"
+  },
+  "reserva_lede": {
+    "es": "Para grupos de más de 8 personas o eventos, escríbenos directamente y preparamos una propuesta a medida.",
+    "ca": "Per a grups de més de 8 persones o esdeveniments, escriu-nos directament i preparem una proposta a mida.",
+    "en": "For groups of more than 8 or private events, write to us directly and we'll put together a tailored proposal."
+  },
+  "days_lj": {
+    "es": "Lunes – Jueves",
+    "ca": "Dilluns – Dijous",
+    "en": "Monday – Thursday"
+  },
+  "days_vs": {
+    "es": "Viernes – Sábado",
+    "ca": "Divendres – Dissabte",
+    "en": "Friday – Saturday"
+  },
+  "days_dom": {
+    "es": "Domingo",
+    "ca": "Diumenge",
+    "en": "Sunday"
+  },
+  "res_fallback": {
+    "es": "¿No ves el formulario? <a href=\"https://widget.thefork.com/3af98b5a-dc40-484a-b154-8ffb5dac9d7e/homepage/402f668e-ea92-4009-af01-ae7eb867c0c6\" target=\"_blank\" rel=\"noopener\">Reserva en TheFork</a> · o llama al <a href=\"tel:+34931035424\">+34 931 03 54 24</a>",
+    "ca": "No veus el formulari? <a href=\"https://widget.thefork.com/3af98b5a-dc40-484a-b154-8ffb5dac9d7e/homepage/402f668e-ea92-4009-af01-ae7eb867c0c6\" target=\"_blank\" rel=\"noopener\">Reserva a TheFork</a> · o truca al <a href=\"tel:+34931035424\">+34 931 03 54 24</a>",
+    "en": "Can't see the form? <a href=\"https://widget.thefork.com/3af98b5a-dc40-484a-b154-8ffb5dac9d7e/homepage/402f668e-ea92-4009-af01-ae7eb867c0c6\" target=\"_blank\" rel=\"noopener\">Book on TheFork</a> · or call <a href=\"tel:+34931035424\">+34 931 03 54 24</a>"
+  },
+  "contacto_kicker": {
+    "es": "Dónde estamos",
+    "ca": "On som",
+    "en": "Find us"
+  },
+  "contacto_title": {
+    "es": "Plaça de Francesc Macià",
+    "ca": "Plaça de Francesc Macià",
+    "en": "Plaça de Francesc Macià"
+  },
+  "contacto_dir": {
+    "es": "Dirección",
+    "ca": "Adreça",
+    "en": "Address"
+  },
+  "contacto_tel": {
+    "es": "Teléfono",
+    "ca": "Telèfon",
+    "en": "Phone"
+  },
+  "contacto_email": {
+    "es": "Email",
+    "ca": "Correu",
+    "en": "Email"
+  },
+  "contacto_horario": {
+    "es": "Horario",
+    "ca": "Horari",
+    "en": "Hours"
+  },
+  "contacto_horario_val": {
+    "es": "Abierto todos los días<br />Lun–Jue 11:00–1:00 h · Vie–Sáb 11:00–2:00 h · Dom 11:00–1:00 h",
+    "ca": "Obert tots els dies<br />Dl–Dj 11:00–1:00 h · Dv–Ds 11:00–2:00 h · Dg 11:00–1:00 h",
+    "en": "Open every day<br />Mon–Thu 11:00–1:00 · Fri–Sat 11:00–2:00 · Sun 11:00–1:00"
+  },
+  "footer_desc": {
+    "es": "Cocina mediterránea, brasa y barra de coctelería en Francesc Macià, Barcelona.",
+    "ca": "Cuina mediterrània, brasa i barra de coctelaria a Francesc Macià, Barcelona.",
+    "en": "Mediterranean cooking, charcoal grill and a cocktail bar in Francesc Macià, Barcelona."
+  },
+  "footer_nav": {
+    "es": "Navega",
+    "ca": "Navega",
+    "en": "Navigate"
+  },
+  "footer_contacto": {
+    "es": "Contacto",
+    "ca": "Contacte",
+    "en": "Contact"
+  }
+}

@@ -1,0 +1,730 @@
+{
+  "categorias": [
+    {
+      "id": "vermut",
+      "nombre_es": "De vermut y tapeo",
+      "nombre_ca": "De vermut i tapeig",
+      "nombre_en": "Vermouth & tapas",
+      "platos": [
+        {
+          "subtitulo": false,
+          "nombre": "Gilda clásica",
+          "descripcion": "Aceituna, anchoa y guindilla encurtida",
+          "precio": "3,95 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Aceitunas aliñadas",
+          "descripcion": "Aceituna “yeye” aliñadas al mojo picón",
+          "precio": "3,95 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Patatas chips “By Raquel”",
+          "descripcion": "Patatas fritas artesanas, al estilo tradicional",
+          "precio": "3,95 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Berberechos de llauna",
+          "descripcion": "Berberechos “al natural”",
+          "precio": "16,95 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Mejillones en escabeche",
+          "descripcion": "Mejillón de las Rías Gallegas",
+          "precio": "14,95 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Anchoas del Cantábrico 00",
+          "descripcion": "Con pan de coca y tomate de colgar",
+          "precio": "16,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Jamón ibérico de bellota",
+          "descripcion": "Jamón 100% ibérico",
+          "precio": "32,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Tabla de quesos",
+          "descripcion": "Selección de quesos con pan de nueces",
+          "precio": "22,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Ostra al natural",
+          "descripcion": "Ostra Fines de Claires N2 · por unidad",
+          "precio": "5,95 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Pan de coca con tomate",
+          "descripcion": "Opción sin gluten y pan de pagès",
+          "precio": "3,95 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Calamares a la andaluza",
+          "descripcion": "Con mayo kimchi",
+          "precio": "16,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Patatas bravas",
+          "descripcion": "Nuestra salsa brava y all i oli",
+          "precio": "8,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Ensaladilla rusa",
+          "descripcion": "Ventresca de atún y piparra encurtida",
+          "precio": "12,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Pimientos del Padrón",
+          "descripcion": "Fritos con sal de escamas",
+          "precio": "7,80 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Croquetas de pollo",
+          "descripcion": "A la catalana con pasas y piñones",
+          "precio": "3,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Croqueta de solomillo y foie",
+          "descripcion": "Solomillo de ternera y mousse de foie",
+          "precio": "3,95 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Croquetas de calamar",
+          "descripcion": "Calamar en su tinta",
+          "precio": "3,95 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Pepito de ternera",
+          "descripcion": "Solomillo, padrón y salsa Oporto",
+          "precio": "12,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Bikini Mery",
+          "descripcion": "Jamón 5J, tartufata y queso brie",
+          "precio": "10,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Brioche de calamar",
+          "descripcion": "Pan brioche con calamar a la andaluza",
+          "precio": "10,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Huevos rotos con gambas",
+          "descripcion": "Huevos camperos y patatas fritas",
+          "precio": "16,00 €"
+        }
+      ]
+    },
+    {
+      "id": "huerta",
+      "nombre_es": "De la huerta",
+      "nombre_ca": "De l'hort",
+      "nombre_en": "From the garden",
+      "platos": [
+        {
+          "subtitulo": false,
+          "nombre": "Ensalada de tomate de temporada",
+          "descripcion": "Ventresca de atún, cebolla tierna y piparra",
+          "precio": "18,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Ensalada César",
+          "descripcion": "Pollo, manzana ácida, bacon crujiente y parmesano",
+          "precio": "15,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Gazpacho",
+          "descripcion": "Elaborado con tomates de temporada y picadillo",
+          "precio": "12,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Ensalada de burrata",
+          "descripcion": "Con aguacate, naranja y vinagreta de mango",
+          "precio": "16,00 €"
+        }
+      ]
+    },
+    {
+      "id": "principales",
+      "nombre_es": "Principales",
+      "nombre_ca": "Principals",
+      "nombre_en": "Mains",
+      "platos": [
+        {
+          "subtitulo": false,
+          "nombre": "Steak tartar premium",
+          "descripcion": "Luismi vaca",
+          "precio": "16,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Ceviche peruano",
+          "descripcion": "Maíz chulpe, choclo, boniato",
+          "precio": "24,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Tartar de atún Bluefin",
+          "descripcion": "Aguacate y ponzu",
+          "precio": "28,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Spaghetti al vongole",
+          "descripcion": "Clásico italiano con almeja gallega",
+          "precio": "26,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Rape en tempura",
+          "descripcion": "Con gambas y mayo kimchi",
+          "precio": "26,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Mejillones",
+          "descripcion": "Al vapor",
+          "precio": "14,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Costillas de cabrito rebozadas",
+          "descripcion": "Lechal, patatas y pimiento del Padrón",
+          "precio": "26,00 €"
+        }
+      ]
+    },
+    {
+      "id": "asador",
+      "nombre_es": "Carbón y asador",
+      "nombre_ca": "Carbó i graella",
+      "nombre_en": "Charcoal & grill",
+      "platos": [
+        {
+          "subtitulo": false,
+          "nombre": "Arroz de mar",
+          "descripcion": "Mejillones, gambas y calamar de playa",
+          "precio": "24,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Lubina a la brasa",
+          "descripcion": "A la donostiarra",
+          "precio": "32,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Dorada a la brasa",
+          "descripcion": "A la donostiarra",
+          "precio": "30,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Pulpo a la brasa",
+          "descripcion": "Patata a la mantequilla y pico de gallo",
+          "precio": "26,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Gambas a la brasa",
+          "descripcion": "Gamba roja de Huelva a la brasa",
+          "precio": "25,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Almejas",
+          "descripcion": "Almeja gallega a la donostiarra",
+          "precio": "24,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Hamburguesa Mery",
+          "descripcion": "Queso raclette, cebolla caramelizada y salsa Mery",
+          "precio": "16,50 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Pollo de corral",
+          "descripcion": "Pollo asado con salsa Mery (solo mediodía)",
+          "precio": "14,90 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Canelón de rustido",
+          "descripcion": "Carne rustida con bechamel trufada",
+          "precio": "19,95 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Arroz de montaña",
+          "descripcion": "Magret, butifarra negra y trompeta",
+          "precio": "22,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Entrecot de ternera 300 g",
+          "descripcion": "Vaca rubia gallega",
+          "precio": "39,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Entrecot de ternera 500 g",
+          "descripcion": "Vaca rubia gallega",
+          "precio": "59,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Entraña de ternera",
+          "descripcion": "Cremoso de boniato y pico de gallo",
+          "precio": "39,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Verduras asadas",
+          "descripcion": "Verdura de temporada con salsa romesco",
+          "precio": "16,00 €"
+        }
+      ]
+    },
+    {
+      "id": "postres",
+      "nombre_es": "Postres",
+      "nombre_ca": "Postres",
+      "nombre_en": "Desserts",
+      "platos": [
+        {
+          "subtitulo": false,
+          "nombre": "Trufas de chocolate clásicas",
+          "descripcion": "",
+          "precio": "6,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Helados",
+          "descripcion": "Consultar sabores",
+          "precio": "8,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Piña asada",
+          "descripcion": "Con helado de coco",
+          "precio": "9,00 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Cheesecake cremosa",
+          "descripcion": "Consultar sabores",
+          "precio": "9,00 €"
+        }
+      ]
+    },
+    {
+      "id": "vinos",
+      "nombre_es": "Vinos & Champagne",
+      "nombre_ca": "Vins & Champagne",
+      "nombre_en": "Wine & Champagne",
+      "platos": [
+        {
+          "subtitulo": true,
+          "nombre": "Tintos",
+          "descripcion": "",
+          "precio": ""
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Sons Criança",
+          "descripcion": "D.O. Montsant · Copa 7 €",
+          "precio": "25 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Clos de Dia",
+          "descripcion": "D.O. Terra Alta",
+          "precio": "22 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Ceps Nous",
+          "descripcion": "D.O.C. Priorat · Copa 11 €",
+          "precio": "35 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Clos Mogador",
+          "descripcion": "D.O.Q. Priorat",
+          "precio": "120 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Castillo de Olite Crianza",
+          "descripcion": "D.O. Navarra",
+          "precio": "24 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Muga Crianza",
+          "descripcion": "D.O.C. Rioja · Copa 11 €",
+          "precio": "35 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Viñas de Gain",
+          "descripcion": "D.O.C. Rioja",
+          "precio": "55 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Prado Enea Gran Reserva",
+          "descripcion": "D.O.C. Rioja",
+          "precio": "125 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Arrocal Roble",
+          "descripcion": "D.O. Ribera del Duero · Copa 8 €",
+          "precio": "25 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Perro Gato Ratón",
+          "descripcion": "D.O. Ribera del Duero",
+          "precio": "34 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Viña Sastre",
+          "descripcion": "D.O. Ribera del Duero",
+          "precio": "45 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Liberalia Cero",
+          "descripcion": "D.O. Toro",
+          "precio": "35 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Clos de L’Oratoire Châteauneuf-du-Pape",
+          "descripcion": "A.O.C.",
+          "precio": "145 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Côte de Beaune-Villages",
+          "descripcion": "A.O.C. Côte de Beaune",
+          "precio": "65 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Toso Barolo",
+          "descripcion": "D.O.C.G. Piamonte",
+          "precio": "75 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Miros de Ribera Reserva",
+          "descripcion": "D.O. Ribera del Duero",
+          "precio": "48 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Silencio de Miros",
+          "descripcion": "D.O. Ribera del Duero",
+          "precio": "84 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "La Mila de Miros 2018",
+          "descripcion": "D.O. Ribera del Duero",
+          "precio": "256 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Petit Princep",
+          "descripcion": "D.O.Q. Priorat",
+          "precio": "35 €"
+        },
+        {
+          "subtitulo": true,
+          "nombre": "Blancos",
+          "descripcion": "",
+          "precio": ""
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Pazo do Castrelo",
+          "descripcion": "D.O. Rías Baixas · Copa 9 €",
+          "precio": "35 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Morgadio",
+          "descripcion": "D.O. Rías Baixas",
+          "precio": "38 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Clos de Dia",
+          "descripcion": "D.O. Terra Alta",
+          "precio": "23 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Castell de Fades",
+          "descripcion": "D.O. Conca de Barberà",
+          "precio": "25 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Petits Caus",
+          "descripcion": "D.O. Penedès",
+          "precio": "32 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Lalos",
+          "descripcion": "D.O. Rueda · Copa 7 €",
+          "precio": "25 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Dominio de la Granadilla",
+          "descripcion": "D.O. Rueda · Ecológico",
+          "precio": "28 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Flor de Muga",
+          "descripcion": "D.O.C. Rioja",
+          "precio": "45 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "O Luar do Sil Godello",
+          "descripcion": "D.O. Valdeorras",
+          "precio": "34 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Señorío de Beade",
+          "descripcion": "D.O. Ribeiro",
+          "precio": "32 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Tierra de Sabinas",
+          "descripcion": "D.O. Finca Élez · Eco · Copa 9 €",
+          "precio": "27 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Gustave Lorentz Riesling Reserva",
+          "descripcion": "A.O.C. Alsace",
+          "precio": "45 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Pouilly Fumé Sauvignon",
+          "descripcion": "A.O.C. Pouilly-Fumé",
+          "precio": "75 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Chablis Barton",
+          "descripcion": "A.O.C. Chablis · Copa 15 €",
+          "precio": "60 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "La Casa de las Locas",
+          "descripcion": "D.O. Ribeiro",
+          "precio": "32 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Homenaje",
+          "descripcion": "D.O. Penedès · Copa 8 €",
+          "precio": "25 €"
+        },
+        {
+          "subtitulo": true,
+          "nombre": "Rosados",
+          "descripcion": "",
+          "precio": ""
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Castell de Fades",
+          "descripcion": "D.O. Conca de Barberà",
+          "precio": "22 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Rosa Palo",
+          "descripcion": "D.O. Navarra · Copa 8 €",
+          "precio": "25 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Flor de Muga Rosé",
+          "descripcion": "D.O.C. Rioja",
+          "precio": "45 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "OTT Rosé",
+          "descripcion": "A.O.P. Côtes de Provence",
+          "precio": "49 €"
+        },
+        {
+          "subtitulo": true,
+          "nombre": "Cava",
+          "descripcion": "",
+          "precio": ""
+        },
+        {
+          "subtitulo": false,
+          "nombre": "M. Bosch Brut Nature Reserva Familiar",
+          "descripcion": "Copa 7 €",
+          "precio": "28 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Torelló Brut Nature",
+          "descripcion": "",
+          "precio": "37 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Torelló Pàl·lid",
+          "descripcion": "",
+          "precio": "35 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Masia Salat Organic Rosé",
+          "descripcion": "Copa 8 €",
+          "precio": "25 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Juvé & Camps Reserva de la Familia",
+          "descripcion": "",
+          "precio": "35 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Gramona Brut Imperial",
+          "descripcion": "",
+          "precio": "57 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "225 de Torelló",
+          "descripcion": "",
+          "precio": "60 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Kripta",
+          "descripcion": "",
+          "precio": "135 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Seguro de Viudas",
+          "descripcion": "Copa 11 €",
+          "precio": "35 €"
+        },
+        {
+          "subtitulo": true,
+          "nombre": "Champagne",
+          "descripcion": "",
+          "precio": ""
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Perrier-Jouët Brut",
+          "descripcion": "Copa 19 €",
+          "precio": "90 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Perrier-Jouët Blason Rosé",
+          "descripcion": "",
+          "precio": "125 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Perrier-Jouët Blanc de Blancs",
+          "descripcion": "",
+          "precio": "140 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Belle Époque Blanc de Perrier-Jouët",
+          "descripcion": "",
+          "precio": "390 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Louis Roederer Collection",
+          "descripcion": "",
+          "precio": "120 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Cristal de Louis Roederer",
+          "descripcion": "",
+          "precio": "550 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Dom Pérignon Blanc",
+          "descripcion": "",
+          "precio": "450 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Ruinart Blanc de Blancs",
+          "descripcion": "",
+          "precio": "150 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Ruinart Rosé",
+          "descripcion": "",
+          "precio": "145 €"
+        },
+        {
+          "subtitulo": false,
+          "nombre": "Krug Grande Cuvée",
+          "descripcion": "",
+          "precio": "490 €"
+        }
+      ]
+    }
+  ]
+}

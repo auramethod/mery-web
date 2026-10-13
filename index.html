@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Restaurante Mery · Plaça de Francesc Macià, Barcelona</title>
+<link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin />
+<link rel="preconnect" href="https://db.onlinewebfonts.com" crossorigin />
+<link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>if(window.netlifyIdentity){netlifyIdentity.on("init",function(u){if(!u){netlifyIdentity.on("login",function(){document.location.href="/admin/";});}});}</script>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="bar">
+    <ul class="nav-links">
+      <li><a href="#carta" data-i18n="nav_carta">Carta</a></li>
+      <li><a href="eventos.html" data-i18n="nav_eventos">Eventos</a></li>
+      <li><a href="#opiniones" data-i18n="nav_opiniones">Opiniones</a></li>
+    </ul>
+    <a href="#inicio" class="brand"><img src="images/mery-logo.png" alt="Mery · Barcelona" /></a>
+    <ul class="nav-links right">
+      <li class="lang-switch" id="langSwitch">
+        <button type="button" data-lang="es">ESP</button><span>|</span><button type="button" data-lang="ca">CAT</button><span>|</span><button type="button" data-lang="en">EN</button>
+      </li>
+      <li><a href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener" class="nav-ig" aria-label="Instagram de Mery">
+        <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+      </a></li>
+      <li><a href="#contacto" data-i18n="nav_contacto">Contacto</a></li>
+      <li><a href="#reserva" class="nav-cta" data-i18n="nav_reservar">Reservar</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<nav class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose" aria-label="Cerrar menú">&times;</button>
+  <a href="#carta" data-i18n="nav_carta">Carta</a>
+  <a href="eventos.html" data-i18n="nav_eventos">Eventos</a>
+  <a href="#opiniones" data-i18n="nav_opiniones">Opiniones</a>
+  <a href="#contacto" data-i18n="nav_contacto">Contacto</a>
+  <a href="#reserva" class="btn" data-i18n="nav_reservar_mesa">Reservar mesa</a>
+  <div class="lang-switch lang-switch--mobile">
+    <button type="button" data-lang="es">ESP</button><span>|</span><button type="button" data-lang="ca">CAT</button><span>|</span><button type="button" data-lang="en">EN</button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio" data-screen-label="Inicio">
+  <div class="hero__media" id="heroSlides">
+    <img class="hero__slide active" src="images/facade-columns.jpg" alt="Fachada de Mery con sus columnas en Francesc Macià" />
+    <img class="hero__slide" src="images/pulpo.jpg" alt="Pulpo a la brasa de Mery" />
+    <img class="hero__slide" src="images/aperitivo.jpg" alt="Varios platos en la mesa de Mery" />
+    <img class="hero__slide" src="images/terrace.jpg" alt="Terraza de Mery con la plaza de fondo" />
+    <img class="hero__slide" src="images/interior-champagne.jpg" alt="Interior de Mery con la pared de champagne y la lámpara de araña" />
+  </div>
+  <div class="hero__band">
+    <div class="hero__band-inner">
+      <p class="hero__sub" data-i18n="hero_sub">Cocina mediterránea, brasa y barra de coctelería en Francesc Macià, Barcelona. Abierto todos los días.</p>
+      <div class="hero__actions">
+        <a href="#carta" class="btn btn--ghost" data-i18n="hero_cta_carta">Ver la carta</a>
+        <a href="#reserva" class="btn" data-i18n="nav_reservar_mesa">Reservar mesa</a>
+      </div>
+    </div>
+  </div>
+  <a href="#sobre" class="hero__scroll"><span class="line"></span></a>
+</section>
+
+<!-- ============ INTRO / SOBRE ============ -->
+<section class="intro section-pad" id="sobre" data-screen-label="Sobre nosotros">
+  <div class="wrap">
+    <div class="intro__grid">
+      <div class="intro__media">
+        <figure class="beforeafter" id="baCompare">
+          <img class="ba-base" src="images/mery-new.jpg" alt="La esquina del Mery hoy, en color" />
+          <div class="ba-after">
+            <img src="images/mery-old.png" alt="La esquina del Mery en 1935, en blanco y negro" />
+          </div>
+          <span class="ba-handle" aria-hidden="true"><span class="ba-grip">⇆</span></span>
+          <span class="ba-tag ba-tag--old">1935</span>
+          <span class="ba-tag ba-tag--new">2026</span>
+        </figure>
+      </div>
+      <div class="intro__body">
+        <p class="kicker" data-i18n="intro_kicker">Desde 1935</p>
+        <h2 class="section-title" style="font-size:clamp(20px,2.6vw,30px);white-space:nowrap" data-i18n-html="intro_title">Misma esencia, <em>nueva cocina</em></h2>
+        <p data-i18n="intro_p1">El restaurante Mery abrió sus puertas por primera vez en 1935, convirtiéndose en un punto de encuentro de la Barcelona de la época durante más de dos décadas.</p>
+        <p data-i18n="intro_p2">Más de sesenta años después, el local recupera su identidad original y su espíritu acogedor para abrir un nuevo capítulo, manteniendo vivo el legado que dio inicio a esta historia. Una propuesta gastronómica contemporánea que celebra el producto, la sobremesa y el placer de compartir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARTA ============ -->
+<section class="carta section-pad" id="carta" data-screen-label="Carta">
+  <div class="wrap">
+    <div class="carta__head">
+      <p class="kicker center" data-i18n="carta_kicker">La carta</p>
+      <h2 class="section-title section-title--sm" data-i18n-html="carta_title">Para disfrutar <em>sin prisa</em></h2>
+      <p class="lede" data-i18n="carta_lede">El mejor producto de temporada, la brasa protagonista y una bodega pensada para acompañar.</p>
+    </div>
+
+    <div class="menu-tabs" id="menuTabs">
+      <button class="menu-tab active" data-tab="vermut" data-i18n="tab_vermut">De vermut y tapeo</button>
+      <button class="menu-tab" data-tab="huerta" data-i18n="tab_huerta">De la huerta</button>
+      <button class="menu-tab" data-tab="principales" data-i18n="tab_principales">Principales</button>
+      <button class="menu-tab" data-tab="asador" data-i18n="tab_asador">Carbón y asador</button>
+      <button class="menu-tab" data-tab="postres" data-i18n="tab_postres">Postres</button>
+      <button class="menu-tab" data-tab="vinos" data-i18n="tab_vinos">Vinos &amp; Champagne</button>
+    </div>
+
+    <div class="menu-panel active" data-panel="vermut">
+      <div class="menu-grid">
+        <div class="dish"><div class="dish__top"><span class="dish__name">Gilda clásica</span><span class="dish__dots"></span><span class="dish__price">3,95 €</span></div><p class="dish__desc">Aceituna, anchoa y guindilla encurtida</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Aceitunas aliñadas</span><span class="dish__dots"></span><span class="dish__price">3,95 €</span></div><p class="dish__desc">Aceituna “yeye” aliñadas al mojo picón</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Patatas chips “By Raquel”</span><span class="dish__dots"></span><span class="dish__price">3,95 €</span></div><p class="dish__desc">Patatas fritas artesanas, al estilo tradicional</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Berberechos de llauna</span><span class="dish__dots"></span><span class="dish__price">16,95 €</span></div><p class="dish__desc">Berberechos “al natural”</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Mejillones en escabeche</span><span class="dish__dots"></span><span class="dish__price">14,95 €</span></div><p class="dish__desc">Mejillón de las Rías Gallegas</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Anchoas del Cantábrico 00</span><span class="dish__dots"></span><span class="dish__price">16,00 €</span></div><p class="dish__desc">Con pan de coca y tomate de colgar</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Jamón ibérico de bellota</span><span class="dish__dots"></span><span class="dish__price">32,00 €</span></div><p class="dish__desc">Jamón 100% ibérico</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Tabla de quesos</span><span class="dish__dots"></span><span class="dish__price">22,00 €</span></div><p class="dish__desc">Selección de quesos con pan de nueces</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Ostra al natural</span><span class="dish__dots"></span><span class="dish__price">5,95 €</span></div><p class="dish__desc">Ostra Fines de Claires N2 · por unidad</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Pan de coca con tomate</span><span class="dish__dots"></span><span class="dish__price">3,95 €</span></div><p class="dish__desc">Opción sin gluten y pan de pagès</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Calamares a la andaluza</span><span class="dish__dots"></span><span class="dish__price">16,00 €</span></div><p class="dish__desc">Con mayo kimchi</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Patatas bravas</span><span class="dish__dots"></span><span class="dish__price">8,50 €</span></div><p class="dish__desc">Nuestra salsa brava y all i oli</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Ensaladilla rusa</span><span class="dish__dots"></span><span class="dish__price">12,50 €</span></div><p class="dish__desc">Ventresca de atún y piparra encurtida</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Pimientos del Padrón</span><span class="dish__dots"></span><span class="dish__price">7,80 €</span></div><p class="dish__desc">Fritos con sal de escamas</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Croquetas de pollo</span><span class="dish__dots"></span><span class="dish__price">3,50 €</span></div><p class="dish__desc">A la catalana con pasas y piñones</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Croqueta de solomillo y foie</span><span class="dish__dots"></span><span class="dish__price">3,95 €</span></div><p class="dish__desc">Solomillo de ternera y mousse de foie</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Croquetas de calamar</span><span class="dish__dots"></span><span class="dish__price">3,95 €</span></div><p class="dish__desc">Calamar en su tinta</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Pepito de ternera</span><span class="dish__dots"></span><span class="dish__price">12,50 €</span></div><p class="dish__desc">Solomillo, padrón y salsa Oporto</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Bikini Mery</span><span class="dish__dots"></span><span class="dish__price">10,50 €</span></div><p class="dish__desc">Jamón 5J, tartufata y queso brie</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Brioche de calamar</span><span class="dish__dots"></span><span class="dish__price">10,50 €</span></div><p class="dish__desc">Pan brioche con calamar a la andaluza</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Huevos rotos con gambas</span><span class="dish__dots"></span><span class="dish__price">16,00 €</span></div><p class="dish__desc">Huevos camperos y patatas fritas</p></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="huerta">
+      <div class="menu-grid">
+        <div class="dish"><div class="dish__top"><span class="dish__name">Ensalada de tomate de temporada</span><span class="dish__dots"></span><span class="dish__price">18,50 €</span></div><p class="dish__desc">Ventresca de atún, cebolla tierna y piparra</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Ensalada César</span><span class="dish__dots"></span><span class="dish__price">15,50 €</span></div><p class="dish__desc">Pollo, manzana ácida, bacon crujiente y parmesano</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Gazpacho</span><span class="dish__dots"></span><span class="dish__price">12,50 €</span></div><p class="dish__desc">Elaborado con tomates de temporada y picadillo</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Ensalada de burrata</span><span class="dish__dots"></span><span class="dish__price">16,00 €</span></div><p class="dish__desc">Con aguacate, naranja y vinagreta de mango</p></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="principales">
+      <div class="menu-grid">
+        <div class="dish"><div class="dish__top"><span class="dish__name">Steak tartar premium</span><span class="dish__dots"></span><span class="dish__price">16,50 €</span></div><p class="dish__desc">Luismi vaca</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Ceviche peruano</span><span class="dish__dots"></span><span class="dish__price">24,50 €</span></div><p class="dish__desc">Maíz chulpe, choclo, boniato</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Tartar de atún Bluefin</span><span class="dish__dots"></span><span class="dish__price">28,00 €</span></div><p class="dish__desc">Aguacate y ponzu</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Spaghetti al vongole</span><span class="dish__dots"></span><span class="dish__price">26,00 €</span></div><p class="dish__desc">Clásico italiano con almeja gallega</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Rape en tempura</span><span class="dish__dots"></span><span class="dish__price">26,00 €</span></div><p class="dish__desc">Con gambas y mayo kimchi</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Mejillones</span><span class="dish__dots"></span><span class="dish__price">14,50 €</span></div><p class="dish__desc">Al vapor</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Costillas de cabrito rebozadas</span><span class="dish__dots"></span><span class="dish__price">26,00 €</span></div><p class="dish__desc">Lechal, patatas y pimiento del Padrón</p></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="asador">
+      <div class="menu-grid">
+        <div class="dish"><div class="dish__top"><span class="dish__name">Arroz de mar</span><span class="dish__dots"></span><span class="dish__price">24,50 €</span></div><p class="dish__desc">Mejillones, gambas y calamar de playa</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Lubina a la brasa</span><span class="dish__dots"></span><span class="dish__price">32,00 €</span></div><p class="dish__desc">A la donostiarra</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Dorada a la brasa</span><span class="dish__dots"></span><span class="dish__price">30,00 €</span></div><p class="dish__desc">A la donostiarra</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Pulpo a la brasa</span><span class="dish__dots"></span><span class="dish__price">26,00 €</span></div><p class="dish__desc">Patata a la mantequilla y pico de gallo</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Gambas a la brasa</span><span class="dish__dots"></span><span class="dish__price">25,50 €</span></div><p class="dish__desc">Gamba roja de Huelva a la brasa</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Almejas</span><span class="dish__dots"></span><span class="dish__price">24,00 €</span></div><p class="dish__desc">Almeja gallega a la donostiarra</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Hamburguesa Mery</span><span class="dish__dots"></span><span class="dish__price">16,50 €</span></div><p class="dish__desc">Queso raclette, cebolla caramelizada y salsa Mery</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Pollo de corral</span><span class="dish__dots"></span><span class="dish__price">14,90 €</span></div><p class="dish__desc">Pollo asado con salsa Mery (solo mediodía)</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Canelón de rustido</span><span class="dish__dots"></span><span class="dish__price">19,95 €</span></div><p class="dish__desc">Carne rustida con bechamel trufada</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Arroz de montaña</span><span class="dish__dots"></span><span class="dish__price">22,00 €</span></div><p class="dish__desc">Magret, butifarra negra y trompeta</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Entrecot de ternera 300 g</span><span class="dish__dots"></span><span class="dish__price">39,00 €</span></div><p class="dish__desc">Vaca rubia gallega</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Entrecot de ternera 500 g</span><span class="dish__dots"></span><span class="dish__price">59,00 €</span></div><p class="dish__desc">Vaca rubia gallega</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Entraña de ternera</span><span class="dish__dots"></span><span class="dish__price">39,00 €</span></div><p class="dish__desc">Cremoso de boniato y pico de gallo</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Verduras asadas</span><span class="dish__dots"></span><span class="dish__price">16,00 €</span></div><p class="dish__desc">Verdura de temporada con salsa romesco</p></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-panel="postres">
+      <div class="menu-grid">
+        <div class="dish"><div class="dish__top"><span class="dish__name">Trufas de chocolate clásicas</span><span class="dish__dots"></span><span class="dish__price">6,00 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Helados</span><span class="dish__dots"></span><span class="dish__price">8,00 €</span></div><p class="dish__desc">Consultar sabores</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Piña asada</span><span class="dish__dots"></span><span class="dish__price">9,00 €</span></div><p class="dish__desc">Con helado de coco</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Cheesecake cremosa</span><span class="dish__dots"></span><span class="dish__price">9,00 €</span></div><p class="dish__desc">Consultar sabores</p></div>
+      </div>
+    </div>
+
+    <!-- Vinos & Champagne -->
+    <div class="menu-panel" data-panel="vinos">
+      <div class="menu-grid">
+        <div class="menu-sub">Tintos</div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Sons Criança</span><span class="dish__dots"></span><span class="dish__price">25 €</span></div><p class="dish__desc">D.O. Montsant · Copa 7 €</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Clos de Dia</span><span class="dish__dots"></span><span class="dish__price">22 €</span></div><p class="dish__desc">D.O. Terra Alta</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Ceps Nous</span><span class="dish__dots"></span><span class="dish__price">35 €</span></div><p class="dish__desc">D.O.C. Priorat · Copa 11 €</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Clos Mogador</span><span class="dish__dots"></span><span class="dish__price">120 €</span></div><p class="dish__desc">D.O.Q. Priorat</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Castillo de Olite Crianza</span><span class="dish__dots"></span><span class="dish__price">24 €</span></div><p class="dish__desc">D.O. Navarra</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Muga Crianza</span><span class="dish__dots"></span><span class="dish__price">35 €</span></div><p class="dish__desc">D.O.C. Rioja · Copa 11 €</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Viñas de Gain</span><span class="dish__dots"></span><span class="dish__price">55 €</span></div><p class="dish__desc">D.O.C. Rioja</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Prado Enea Gran Reserva</span><span class="dish__dots"></span><span class="dish__price">125 €</span></div><p class="dish__desc">D.O.C. Rioja</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Arrocal Roble</span><span class="dish__dots"></span><span class="dish__price">25 €</span></div><p class="dish__desc">D.O. Ribera del Duero · Copa 8 €</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Perro Gato Ratón</span><span class="dish__dots"></span><span class="dish__price">34 €</span></div><p class="dish__desc">D.O. Ribera del Duero</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Viña Sastre</span><span class="dish__dots"></span><span class="dish__price">45 €</span></div><p class="dish__desc">D.O. Ribera del Duero</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Liberalia Cero</span><span class="dish__dots"></span><span class="dish__price">35 €</span></div><p class="dish__desc">D.O. Toro</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Clos de L’Oratoire Châteauneuf-du-Pape</span><span class="dish__dots"></span><span class="dish__price">145 €</span></div><p class="dish__desc">A.O.C.</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Côte de Beaune-Villages</span><span class="dish__dots"></span><span class="dish__price">65 €</span></div><p class="dish__desc">A.O.C. Côte de Beaune</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Toso Barolo</span><span class="dish__dots"></span><span class="dish__price">75 €</span></div><p class="dish__desc">D.O.C.G. Piamonte</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Miros de Ribera Reserva</span><span class="dish__dots"></span><span class="dish__price">48 €</span></div><p class="dish__desc">D.O. Ribera del Duero</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Silencio de Miros</span><span class="dish__dots"></span><span class="dish__price">84 €</span></div><p class="dish__desc">D.O. Ribera del Duero</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">La Mila de Miros 2018</span><span class="dish__dots"></span><span class="dish__price">256 €</span></div><p class="dish__desc">D.O. Ribera del Duero</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Petit Princep</span><span class="dish__dots"></span><span class="dish__price">35 €</span></div><p class="dish__desc">D.O.Q. Priorat</p></div>
+
+        <div class="menu-sub">Blancos</div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Pazo do Castrelo</span><span class="dish__dots"></span><span class="dish__price">35 €</span></div><p class="dish__desc">D.O. Rías Baixas · Copa 9 €</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Morgadio</span><span class="dish__dots"></span><span class="dish__price">38 €</span></div><p class="dish__desc">D.O. Rías Baixas</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Clos de Dia</span><span class="dish__dots"></span><span class="dish__price">23 €</span></div><p class="dish__desc">D.O. Terra Alta</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Castell de Fades</span><span class="dish__dots"></span><span class="dish__price">25 €</span></div><p class="dish__desc">D.O. Conca de Barberà</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Petits Caus</span><span class="dish__dots"></span><span class="dish__price">32 €</span></div><p class="dish__desc">D.O. Penedès</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Lalos</span><span class="dish__dots"></span><span class="dish__price">25 €</span></div><p class="dish__desc">D.O. Rueda · Copa 7 €</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Dominio de la Granadilla</span><span class="dish__dots"></span><span class="dish__price">28 €</span></div><p class="dish__desc">D.O. Rueda · Ecológico</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Flor de Muga</span><span class="dish__dots"></span><span class="dish__price">45 €</span></div><p class="dish__desc">D.O.C. Rioja</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">O Luar do Sil Godello</span><span class="dish__dots"></span><span class="dish__price">34 €</span></div><p class="dish__desc">D.O. Valdeorras</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Señorío de Beade</span><span class="dish__dots"></span><span class="dish__price">32 €</span></div><p class="dish__desc">D.O. Ribeiro</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Tierra de Sabinas</span><span class="dish__dots"></span><span class="dish__price">27 €</span></div><p class="dish__desc">D.O. Finca Élez · Eco · Copa 9 €</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Gustave Lorentz Riesling Reserva</span><span class="dish__dots"></span><span class="dish__price">45 €</span></div><p class="dish__desc">A.O.C. Alsace</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Pouilly Fumé Sauvignon</span><span class="dish__dots"></span><span class="dish__price">75 €</span></div><p class="dish__desc">A.O.C. Pouilly-Fumé</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Chablis Barton</span><span class="dish__dots"></span><span class="dish__price">60 €</span></div><p class="dish__desc">A.O.C. Chablis · Copa 15 €</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">La Casa de las Locas</span><span class="dish__dots"></span><span class="dish__price">32 €</span></div><p class="dish__desc">D.O. Ribeiro</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Homenaje</span><span class="dish__dots"></span><span class="dish__price">25 €</span></div><p class="dish__desc">D.O. Penedès · Copa 8 €</p></div>
+
+        <div class="menu-sub">Rosados</div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Castell de Fades</span><span class="dish__dots"></span><span class="dish__price">22 €</span></div><p class="dish__desc">D.O. Conca de Barberà</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Rosa Palo</span><span class="dish__dots"></span><span class="dish__price">25 €</span></div><p class="dish__desc">D.O. Navarra · Copa 8 €</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Flor de Muga Rosé</span><span class="dish__dots"></span><span class="dish__price">45 €</span></div><p class="dish__desc">D.O.C. Rioja</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">OTT Rosé</span><span class="dish__dots"></span><span class="dish__price">49 €</span></div><p class="dish__desc">A.O.P. Côtes de Provence</p></div>
+
+        <div class="menu-sub">Cava</div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">M. Bosch Brut Nature Reserva Familiar</span><span class="dish__dots"></span><span class="dish__price">28 €</span></div><p class="dish__desc">Copa 7 €</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Torelló Brut Nature</span><span class="dish__dots"></span><span class="dish__price">37 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Torelló Pàl·lid</span><span class="dish__dots"></span><span class="dish__price">35 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Masia Salat Organic Rosé</span><span class="dish__dots"></span><span class="dish__price">25 €</span></div><p class="dish__desc">Copa 8 €</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Juvé &amp; Camps Reserva de la Familia</span><span class="dish__dots"></span><span class="dish__price">35 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Gramona Brut Imperial</span><span class="dish__dots"></span><span class="dish__price">57 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">225 de Torelló</span><span class="dish__dots"></span><span class="dish__price">60 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Kripta</span><span class="dish__dots"></span><span class="dish__price">135 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Seguro de Viudas</span><span class="dish__dots"></span><span class="dish__price">35 €</span></div><p class="dish__desc">Copa 11 €</p></div>
+
+        <div class="menu-sub">Champagne</div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Perrier-Jouët Brut</span><span class="dish__dots"></span><span class="dish__price">90 €</span></div><p class="dish__desc">Copa 19 €</p></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Perrier-Jouët Blason Rosé</span><span class="dish__dots"></span><span class="dish__price">125 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Perrier-Jouët Blanc de Blancs</span><span class="dish__dots"></span><span class="dish__price">140 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Belle Époque Blanc de Perrier-Jouët</span><span class="dish__dots"></span><span class="dish__price">390 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Louis Roederer Collection</span><span class="dish__dots"></span><span class="dish__price">120 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Cristal de Louis Roederer</span><span class="dish__dots"></span><span class="dish__price">550 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Dom Pérignon Blanc</span><span class="dish__dots"></span><span class="dish__price">450 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Ruinart Blanc de Blancs</span><span class="dish__dots"></span><span class="dish__price">150 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Ruinart Rosé</span><span class="dish__dots"></span><span class="dish__price">145 €</span></div></div>
+        <div class="dish"><div class="dish__top"><span class="dish__name">Krug Grande Cuvée</span><span class="dish__dots"></span><span class="dish__price">490 €</span></div></div>
+      </div>
+    </div>
+
+    <div class="carta__foot">
+      <p class="carta__note" data-i18n="carta_note">Disponemos de una lista detallada de alérgenos presentes en cada uno de nuestros platos, que puede ser consultada a su solicitud.</p>
+      <a href="#reserva" class="btn btn--outline" data-i18n="nav_reservar_mesa">Reservar mesa</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COCTELERÍA ============ -->
+<section class="coct section-pad" id="cocteleria" data-screen-label="Coctelería">
+  <div class="wrap">
+    <div class="coct__grid">
+      <div class="coct__media">
+        <img src="images/hero-bar.jpg" alt="Barra de coctelería de Mery" />
+      </div>
+      <div class="coct__body">
+        <p class="kicker" data-i18n="coct_kicker">Coctelería de autor</p>
+        <h2 class="section-title" style="white-space:nowrap" data-i18n-html="coct_title">La barra de <em>Mery</em></h2>
+        <p class="lede" data-i18n-html="coct_lede1">La coctelería forma parte de la experiencia Mery. Desde el aperitivo hasta la última copa de la noche, nuestra barra acompaña cada momento con una selección cuidada de cócteles clásicos, creaciones de temporada y referencias premium de <strong>Pernod Ricard</strong>.</p>
+        <p class="lede" style="font-weight:600" data-i18n="coct_lede2">Una propuesta pensada para disfrutar sin prisa, donde cada copa se sirve con la misma atención al detalle que define nuestra cocina.</p>
+        <div class="coct__collab">
+          <span class="coct__collab-label" data-i18n="coct_collab">En colaboración con</span>
+          <img class="coct__logo" src="images/pernod-ricard-logo.png" alt="Pernod Ricard" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="brandmq" aria-label="Marcas con las que trabajamos">
+    <div class="brandmq__track">
+      <img src="images/logo-perrier.avif" alt="Champagne Perrier-Jouët" />
+      <img src="images/logo-ballantines.avif" alt="Ballantine's" />
+      <img src="images/logo-beefeater.avif" alt="Beefeater London" />
+      <img src="images/logo-bumbu.png" alt="Bumbu" />
+      <img src="images/logo-codigo.png" alt="Código 1530" />
+      <img src="images/logo-elyx.avif" alt="Absolut Elyx" />
+      <img src="images/logo-havana.avif" alt="Havana Club" />
+      <img src="images/logo-perrier.avif" alt="" aria-hidden="true" />
+      <img src="images/logo-ballantines.avif" alt="" aria-hidden="true" />
+      <img src="images/logo-beefeater.avif" alt="" aria-hidden="true" />
+      <img src="images/logo-bumbu.png" alt="" aria-hidden="true" />
+      <img src="images/logo-codigo.png" alt="" aria-hidden="true" />
+      <img src="images/logo-elyx.avif" alt="" aria-hidden="true" />
+      <img src="images/logo-havana.avif" alt="" aria-hidden="true" />
+    </div>
+  </div>
+</section>
+<!-- ============ OPINIONES ============ -->
+<section class="opiniones section-pad" id="opiniones" data-screen-label="Opiniones">
+  <div class="wrap">
+    <p class="kicker center" data-i18n="opiniones_kicker">Opiniones</p>
+    <div class="google-rating">
+      <div class="gr-score">4,2</div>
+      <div class="stars" aria-label="4,2 sobre 5">★★★★☆</div>
+      <p class="gr-label" data-i18n="opiniones_label">Valoración media · 840 reseñas en Google</p>
+      <a href="https://share.google/KNh1hjcmBovNtc8ku" target="_blank" rel="noopener" class="btn btn--outline" data-i18n="opiniones_cta">Leer las reseñas en Google</a>
+    </div>
+
+    <div class="review-marquee">
+      <div class="review-track" id="reviewTrack">
+      <article class="gcard">
+        <header class="gcard__head">
+          <span class="gcard__avatar" style="--c:#7a1f2b">ER</span>
+          <div class="gcard__who">
+            <span class="gcard__name">Elisa Romero</span>
+            <span class="gcard__meta">Local Guide · 14 reseñas</span>
+          </div>
+          <span class="gcard__src">Google</span>
+        </header>
+        <div class="gcard__stars">★★★★★ <span>hace 4 meses</span></div>
+        <p class="gcard__text">Sitio ideal para cenar, picar algo o una cita nocturna para tomar un vinito. Fuera una terraza acogedora y dentro un sitio cálido con más ambiente de noche. Nos atendió Marta, súper agradable, cercana y atenta. Nos hizo sentir muy a gusto en la cita perfecta.</p>
+      </article>
+      <article class="gcard">
+        <header class="gcard__head">
+          <span class="gcard__avatar" style="--c:#b08d57">LI</span>
+          <div class="gcard__who">
+            <span class="gcard__name">Luis Ignacio Lladó Molina</span>
+            <span class="gcard__meta">Local Guide · 222 reseñas</span>
+          </div>
+          <span class="gcard__src">Google</span>
+        </header>
+        <div class="gcard__stars">★★★★★ <span>hace 5 meses</span></div>
+        <p class="gcard__text">Fantàstic restaurant amb una carta ben variada on hi ha plats realment bons. A destacar el rap, el caneló de bullit, el pop a la brasa… i les postres, brutals. El personal és molt atent, agradable i amb molta paciència. Un gran regal 🎁</p>
+      </article>
+      <article class="gcard">
+        <header class="gcard__head">
+          <span class="gcard__avatar" style="--c:#3a6b5e">VR</span>
+          <div class="gcard__who">
+            <span class="gcard__name">Veronica Russo</span>
+            <span class="gcard__meta">Local Guide · 120 reseñas</span>
+          </div>
+          <span class="gcard__src">Google</span>
+        </header>
+        <div class="gcard__stars">★★★★★ <span>hace 3 meses</span></div>
+        <p class="gcard__text">Siempre que estamos en Barcelona vamos a Mery. Es un lugar al que volvemos una y otra vez porque nunca decepciona. El personal es excelente: atento, cálido y súper profesional. Ya nos reconocen cuando llegamos y nos hacen sentir como en casa. La comida es riquísima y el ambiente muy agradable. Sin duda, uno de nuestros favoritos de la ciudad.</p>
+      </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="insta section-pad" id="instagram" data-screen-label="Instagram">
+  <div class="wrap">
+    <div class="insta__head">
+      <p class="kicker center" data-i18n="insta_kicker">Síguenos</p>
+      <a href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener" class="insta__handle">@restaurante.mery</a>
+    </div>
+    <div class="insta-grid">
+      <a class="insta-cell" href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener"><img src="images/pulpo.jpg" alt="Pescado y brasa de Mery" /><span class="ig-icon" aria-hidden="true">&#9634;</span></a>
+      <a class="insta-cell" href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener"><img src="images/interior-champagne.jpg" alt="Interior de Mery con la lámpara de araña" /><span class="ig-icon" aria-hidden="true">&#9634;</span></a>
+      <a class="insta-cell" href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener"><img src="images/hero-bar.jpg" alt="Cóctel en la barra de Mery" /><span class="ig-icon" aria-hidden="true">&#9634;</span></a>
+      <a class="insta-cell" href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener"><img src="images/terrace.jpg" alt="Terraza de Mery en la plaza" /><span class="ig-icon" aria-hidden="true">&#9634;</span></a>
+      <a class="insta-cell" href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener"><img src="images/champagne-brut.jpg" alt="Champagne Perrier-Jouët" /><span class="ig-icon" aria-hidden="true">&#9634;</span></a>
+      <a class="insta-cell" href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener"><img src="images/facade-columns.jpg" alt="Fachada de Mery con sus columnas" /><span class="ig-icon" aria-hidden="true">&#9634;</span></a>
+      <a class="insta-cell" href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener"><img src="images/aperitivo.jpg" alt="Aperitivo en Mery" /><span class="ig-icon" aria-hidden="true">&#9634;</span></a>
+      <a class="insta-cell" href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener"><img src="images/place-setting.jpg" alt="Mesa preparada en Mery" /><span class="ig-icon" aria-hidden="true">&#9634;</span></a>
+      <a class="insta-cell" href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener"><img src="images/facade.jpg" alt="Fachada del edificio de Mery" /><span class="ig-icon" aria-hidden="true">&#9634;</span></a>
+    </div>
+    <div class="insta__cta">
+      <a href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener" class="btn btn--outline" data-i18n="insta_cta">Ver en Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESERVA ============ -->
+<section class="reserva section-pad" id="reserva" data-screen-label="Reserva">
+  <div class="wrap">
+    <div class="reserva__grid">
+      <div class="reserva__intro">
+        <p class="kicker" data-i18n="reserva_kicker">Reservas</p>
+        <h2 class="section-title" data-i18n-html="reserva_title">Su mesa le espera en <em style="color:var(--gold-soft)">Mery</em></h2>
+        <p class="lede" data-i18n="reserva_lede">Para grupos de más de 8 personas o eventos, escríbenos directamente y preparamos una propuesta a medida.</p>
+        <div class="reserva__hours">
+          <div class="row"><span data-i18n="days_lj">Lunes – Jueves</span><span>11:00 – 1:00 h</span></div>
+          <div class="row"><span data-i18n="days_vs">Viernes – Sábado</span><span>11:00 – 2:00 h</span></div>
+          <div class="row"><span data-i18n="days_dom">Domingo</span><span>11:00 – 1:00 h</span></div>
+        </div>
+      </div>
+
+      <div class="res-embed">
+        <iframe title="Reservar mesa en Mery — TheFork" src="https://widget.thefork.com/3af98b5a-dc40-484a-b154-8ffb5dac9d7e/homepage/402f668e-ea92-4009-af01-ae7eb867c0c6" loading="lazy"></iframe>
+        <p class="res-embed__fallback" data-i18n-html="res_fallback">¿No ves el formulario? <a href="https://widget.thefork.com/3af98b5a-dc40-484a-b154-8ffb5dac9d7e/homepage/402f668e-ea92-4009-af01-ae7eb867c0c6" target="_blank" rel="noopener">Reserva en TheFork</a> · o llama al <a href="tel:+34931035424">+34 931 03 54 24</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="contacto section-pad" id="contacto" data-screen-label="Contacto">
+  <div class="wrap">
+    <div class="contacto__grid">
+      <div class="contacto__map">
+        <iframe title="Mapa de Mery — Plaça de Francesc Macià, 1, Barcelona" src="https://www.google.com/maps?q=Pla%C3%A7a%20de%20Francesc%20Maci%C3%A0%201%2C%2008021%20Barcelona&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+      <div class="contacto__info">
+        <p class="kicker" data-i18n="contacto_kicker">Dónde estamos</p>
+        <h2 data-i18n="contacto_title">Plaça de Francesc Macià</h2>
+        <div class="contact-line">
+          <span class="ic" data-i18n="contacto_dir">Dirección</span>
+          <span class="val">Plaça de Francesc Macià, 1<br />08021 Barcelona</span>
+        </div>
+        <div class="contact-line">
+          <span class="ic" data-i18n="contacto_tel">Teléfono</span>
+          <span class="val"><a href="tel:+34931035424">+34 931 03 54 24</a></span>
+        </div>
+        <div class="contact-line">
+          <span class="ic" data-i18n="contacto_email">Email</span>
+          <span class="val"><a href="mailto:hola@meryrestaurante.com">hola@meryrestaurante.com</a></span>
+        </div>
+        <div class="contact-line">
+          <span class="ic" data-i18n="contacto_horario">Horario</span>
+          <span class="val" data-i18n-html="contacto_horario_val">Abierto todos los días<br />Lun–Jue 11:00–1:00 h · Vie–Sáb 11:00–2:00 h · Dom 11:00–1:00 h</span>
+        </div>
+        <div class="contacto__social">
+          <a href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener">IG</a>
+          <a href="https://maps.google.com/?q=Pla%C3%A7a+de+Francesc+Maci%C3%A0+Barcelona" target="_blank" rel="noopener">Mapa</a>
+          <a href="tel:+34931035424">Tel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="site-footer__top">
+      <div class="footer-brand">
+        <span class="brand"><img src="images/mery-logo.png" alt="Mery" /></span>
+        <p data-i18n="footer_desc">Cocina mediterránea, brasa y barra de coctelería en Francesc Macià, Barcelona.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_nav">Navega</h4>
+        <ul>
+          <li><a href="#carta" data-i18n="nav_carta">Carta</a></li>
+          <li><a href="eventos.html" data-i18n="nav_eventos">Eventos</a></li>
+          <li><a href="#opiniones" data-i18n="nav_opiniones">Opiniones</a></li>
+          <li><a href="#reserva" data-i18n="nav_reservar">Reservar</a></li>
+          <li><a href="#contacto" data-i18n="nav_contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_contacto">Contacto</h4>
+        <ul>
+          <li>Plaça de Francesc Macià, 1</li>
+          <li>08021 Barcelona</li>
+          <li><a href="tel:+34931035424">+34 931 03 54 24</a></li>
+          <li><a href="https://instagram.com/restaurante.mery" target="_blank" rel="noopener">@restaurante.mery</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <span>© <span id="year"></span> Restaurante Mery · Barcelona</span>
+      <span><a href="legal.html#aviso">Aviso legal</a> · <a href="legal.html#privacidad">Privacidad</a> · <a href="legal.html#cookies">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="i18n.js"></script>
+<script src="contenido.js"></script>
+</body>
+</html>

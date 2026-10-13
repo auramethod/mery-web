@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Eventos y celebraciones · Restaurante Mery · Barcelona</title>
+<meta name="description" content="Eventos, comidas de empresa y celebraciones en Mery: reservados privados, menús a medida y barra de champagne en Plaça de Francesc Macià, Barcelona." />
+<link rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin />
+<link rel="preconnect" href="https://db.onlinewebfonts.com" crossorigin />
+<link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet" />
+<link href="https://fonts.cdnfonts.com/css/aston-script" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .eventos--page .eventos__head .section-title {
+    font-family: "Aston Script", "Bw Gradual", cursive;
+    font-weight: 400;
+    font-size: clamp(34px, 5vw, 64px);
+    line-height: 1.15;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .eventos--page .eventos__head .rotator { height: 1.4em; }
+  .eventos--page .eventos__head .rotator__list span { height: 1.4em; line-height: 1.4em; font-style: normal; }
+  @keyframes rotate-words-aston {
+    0%,14%   { transform: translateY(0); }
+    20%,34%  { transform: translateY(-1.4em); }
+    40%,54%  { transform: translateY(-2.8em); }
+    60%,74%  { transform: translateY(-4.2em); }
+    80%,94%  { transform: translateY(-5.6em); }
+    100%     { transform: translateY(0); }
+  }
+  .eventos--page .eventos__head .rotator { display:inline-block; overflow: hidden; vertical-align: middle; }
+  .eventos--page .eventos__head .rotator__list { animation-name: rotate-words-aston; }
+  .eventos--page .eventos__cta .btn--outline { color:#fff; border-color: rgba(255,255,255,.55); }
+  .eventos--page .eventos__cta .btn--outline:hover { background: var(--granate); border-color: var(--granate); color:#fff; }
+</style>
+</head>
+<body class="grupos-page">
+
+<!-- ============ HEADER ============ -->
+<header class="site-header scrolled" id="header">
+  <div class="bar">
+    <ul class="nav-links">
+      <li><a href="index.html#carta">Carta</a></li>
+      <li><a href="eventos.html" class="is-current">Eventos</a></li>
+      <li><a href="index.html#opiniones">Opiniones</a></li>
+    </ul>
+    <a href="index.html#inicio" class="brand"><img src="images/mery-logo.png" alt="Mery · Barcelona" /></a>
+    <ul class="nav-links right">
+      <li><a href="https://www.instagram.com/restaurante.mery/" target="_blank" rel="noopener" class="nav-ig" aria-label="Instagram de Mery">
+        <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+      </a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+      <li><a href="index.html#reserva" class="nav-cta">Reservar</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ============ EVENTOS ============ -->
+<section class="eventos eventos--page section-pad" id="eventos" data-screen-label="Eventos">
+  <div class="wrap">
+    <div class="eventos__head">
+      <h2 class="section-title">En Mery<br />hacemos realidad tus<br /><span class="rotator" aria-hidden="true"><span class="rotator__list"><span>cenas</span><span>presentaciones</span><span>aniversarios</span><span>comidas de empresa</span><span>eventos</span></span></span><span class="visually-hidden">cenas, presentaciones, aniversarios, comidas de empresa y eventos</span></h2>
+      <p class="lede">Cada celebración es distinta y así la tratamos. Desde una presentación de producto o una cena de equipo hasta un aniversario íntimo o un after work en la terraza: diseñamos el espacio, el menú y la barra a la medida de lo que tengas en mente.</p>
+      <p class="lede eventos__lede2">Reservados privados, menús cerrados con maridaje y barra de champagne para grupos de <strong>8 a 60 personas</strong>.</p>
+    </div>
+    <div class="event-grid">
+      <article class="event-card">
+        <img src="images/table-window.jpg" alt="Mesa íntima junto a la ventana" />
+        <div class="event-card__body">
+          <h3>Comidas o cenas privadas</h3>
+          <p>Reservados para comidas importantes de trabajo o sobremesas largas, con menú cerrado y maridaje.</p>
+          <a href="grupos.html" class="link">Ver menús de grupo</a>
+        </div>
+      </article>
+      <article class="event-card">
+        <img src="images/champagne-brut.jpg" alt="Champagne Perrier-Jouët Grand Brut en cubitera" />
+        <div class="event-card__body">
+          <h3>Barra de bebidas</h3>
+          <p>Cócteles de autor y selección Perrier-Jouët y las marcas Pernod Ricard para aperitivos, comidas o brindis de noche.</p>
+          <a href="grupos.html" class="link">Ver menús de grupo</a>
+        </div>
+      </article>
+      <article class="event-card">
+        <img src="images/terrace.jpg" alt="Terraza de Mery en la plaza" />
+        <div class="event-card__body">
+          <h3>Una terraza única</h3>
+          <p>Cócteles y picoteo en la mejor terraza de Francesc Macià para after works o celebraciones especiales.</p>
+          <a href="grupos.html" class="link">Ver menús de grupo</a>
+        </div>
+      </article>
+    </div>
+    <div class="eventos__cta">
+      <p>Consulta nuestras propuestas cerradas para grupos, con entrantes al centro, principal a elegir y postre.</p>
+      <a href="grupos.html" class="btn btn--outline">Ver menús de grupo</a>
+    </div>
+    <p class="eventos__closer">Cuéntanos tu idea y la hacemos realidad.</p>
+  </div>
+</section>
+
+<footer class="grupos-footer">
+  <a href="index.html#inicio">← Volver a la web de Mery</a>
+</footer>
+
+
+</body>
+</html>

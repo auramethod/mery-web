@@ -1,0 +1,138 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: es
+media_folder: "images"
+public_folder: "images"
+logo_url: /images/mery-logo.png
+site_url: https://www.meryrestaurante.com
+
+collections:
+  - name: carta
+    label: "Carta"
+    files:
+      - name: carta
+        label: "Carta del restaurante"
+        file: "content/carta.json"
+        fields:
+          - label: "Categorías"
+            name: categorias
+            widget: list
+            summary: "{{fields.nombre_es}}"
+            fields:
+              - {label: "ID (sin espacios, no cambiar)", name: id, widget: string}
+              - {label: "Nombre (Español)", name: nombre_es, widget: string}
+              - {label: "Nom (Català)", name: nombre_ca, widget: string}
+              - {label: "Name (English)", name: nombre_en, widget: string}
+              - label: "Platos"
+                name: platos
+                widget: list
+                summary: "{{fields.nombre}} · {{fields.precio}}"
+                fields:
+                  - {label: "Es un subtítulo (p. ej. Tintos, Blancos)", name: subtitulo, widget: boolean, default: false}
+                  - {label: "Nombre", name: nombre, widget: string}
+                  - {label: "Descripción", name: descripcion, widget: string, required: false}
+                  - {label: "Precio (ej. 16,50 €)", name: precio, widget: string, required: false}
+
+  - name: grupos
+    label: "Menús de grupo"
+    files:
+      - name: grupos
+        label: "Menús de grupo"
+        file: "content/grupos.json"
+        fields:
+          - label: "Menús"
+            name: menus
+            widget: list
+            summary: "{{fields.name}} · {{fields.price}}"
+            fields:
+              - {label: "Nombre del menú", name: name, widget: string}
+              - {label: "Precio", name: price, widget: string}
+              - {label: "Texto bajo el precio", name: pp, widget: string, default: "por persona"}
+              - {label: "Etiqueta (opcional)", name: tag, widget: string, required: false}
+              - label: "Apartados"
+                name: groups
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - {label: "Título del apartado", name: label, widget: string}
+                  - {label: "Platos / bebidas", name: items, widget: list, field: {label: "Elemento", name: item, widget: string}}
+
+  - name: fotos
+    label: "Fotos"
+    files:
+      - name: fotos
+        label: "Fotos de la portada e Instagram"
+        file: "content/fotos.json"
+        fields:
+          - label: "Portada (carrusel)"
+            name: hero
+            widget: list
+            fields:
+              - {label: "Foto", name: imagen, widget: image}
+              - {label: "Descripción de la foto", name: alt, widget: string}
+          - label: "Cuadrícula de Instagram (9 fotos)"
+            name: instagram
+            widget: list
+            fields:
+              - {label: "Foto", name: imagen, widget: image}
+              - {label: "Descripción de la foto", name: alt, widget: string}
+
+  - name: textos
+    label: "Textos e idiomas"
+    files:
+      - name: textos
+        label: "Textos de la web (ESP · CAT · EN)"
+        file: "content/textos.json"
+        fields:
+          - {label: "Menú superior · Carta", name: "nav_carta", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Menú superior · Eventos", name: "nav_eventos", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Menú superior · Opiniones", name: "nav_opiniones", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Menú superior · Contacto", name: "nav_contacto", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Menú superior · Reservar", name: "nav_reservar", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Menú superior · Reservar mesa", name: "nav_reservar_mesa", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Portada · Barcelona · Francesc Macià", name: "hero_eyebrow", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Portada · Cocina mediterránea, brasa y barra de co", name: "hero_sub", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: text}, {label: "Català", name: ca, widget: text}, {label: "English", name: en, widget: text}]}
+          - {label: "Portada · Ver la carta", name: "hero_cta_carta", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Historia · Desde 1935", name: "intro_kicker", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Historia · Misma esencia, nueva cocina", name: "intro_title", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Historia · El restaurante Mery abrió sus puertas po", name: "intro_p1", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: text}, {label: "Català", name: ca, widget: text}, {label: "English", name: en, widget: text}]}
+          - {label: "Historia · Más de sesenta años después, el local re", name: "intro_p2", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: text}, {label: "Català", name: ca, widget: text}, {label: "English", name: en, widget: text}]}
+          - {label: "Carta · La carta", name: "carta_kicker", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Carta · Para disfrutar sin prisa", name: "carta_title", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Carta · El mejor producto de temporada, la brasa", name: "carta_lede", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: text}, {label: "Català", name: ca, widget: text}, {label: "English", name: en, widget: text}]}
+          - {label: "Pestañas de la carta · De vermut y tapeo", name: "tab_vermut", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Pestañas de la carta · De la huerta", name: "tab_huerta", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Pestañas de la carta · Principales", name: "tab_principales", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Pestañas de la carta · Carbón y asador", name: "tab_asador", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Pestañas de la carta · Postres", name: "tab_postres", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Pestañas de la carta · Vinos & Champagne", name: "tab_vinos", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Carta · Disponemos de una lista detallada de alé", name: "carta_note", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: text}, {label: "Català", name: ca, widget: text}, {label: "English", name: en, widget: text}]}
+          - {label: "Coctelería · Coctelería de autor", name: "coct_kicker", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Coctelería · La barra de Mery", name: "coct_title", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Coctelería · La coctelería forma parte de la experien", name: "coct_lede1", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: text}, {label: "Català", name: ca, widget: text}, {label: "English", name: en, widget: text}]}
+          - {label: "Coctelería · Una propuesta pensada para disfrutar sin", name: "coct_lede2", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: text}, {label: "Català", name: ca, widget: text}, {label: "English", name: en, widget: text}]}
+          - {label: "Coctelería · En colaboración con", name: "coct_collab", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Opiniones · Opiniones", name: "opiniones_kicker", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Opiniones · Valoración media · 840 reseñas en Google", name: "opiniones_label", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Opiniones · Leer las reseñas en Google", name: "opiniones_cta", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Instagram · Síguenos", name: "insta_kicker", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Instagram · Ver en Instagram", name: "insta_cta", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Reservas · Reservas", name: "reserva_kicker", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Reservas · Su mesa le espera en Mery", name: "reserva_title", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Reservas · Para grupos de más de 8 personas o event", name: "reserva_lede", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: text}, {label: "Català", name: ca, widget: text}, {label: "English", name: en, widget: text}]}
+          - {label: "Horarios · Lunes – Jueves", name: "days_lj", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Horarios · Viernes – Sábado", name: "days_vs", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Horarios · Domingo", name: "days_dom", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Reservas · ¿No ves el formulario? Reserva en TheFor", name: "res_fallback", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: text}, {label: "Català", name: ca, widget: text}, {label: "English", name: en, widget: text}]}
+          - {label: "Contacto · Dónde estamos", name: "contacto_kicker", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Contacto · Plaça de Francesc Macià", name: "contacto_title", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Contacto · Dirección", name: "contacto_dir", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Contacto · Teléfono", name: "contacto_tel", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Contacto · Email", name: "contacto_email", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Contacto · Horario", name: "contacto_horario", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Contacto · Abierto todos los díasLun–Jue 11:00–1:00", name: "contacto_horario_val", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: text}, {label: "Català", name: ca, widget: text}, {label: "English", name: en, widget: text}]}
+          - {label: "Pie de página · Cocina mediterránea, brasa y barra de co", name: "footer_desc", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: text}, {label: "Català", name: ca, widget: text}, {label: "English", name: en, widget: text}]}
+          - {label: "Pie de página · Navega", name: "footer_nav", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
+          - {label: "Pie de página · Contacto", name: "footer_contacto", widget: object, collapsed: true, fields: [{label: "Español", name: es, widget: string}, {label: "Català", name: ca, widget: string}, {label: "English", name: en, widget: string}]}
